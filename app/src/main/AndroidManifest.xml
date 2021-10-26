@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThirteenStones">
         <activity
+            android:name=".activities.StatisticsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/Theme.ThirteenStones.NoActionBar" />
+        <activity
             android:name=".activities.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.ThirteenStones.NoActionBar.SplashScreenTheme">

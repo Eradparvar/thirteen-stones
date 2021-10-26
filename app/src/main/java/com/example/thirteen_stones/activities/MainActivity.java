@@ -1,33 +1,36 @@
 package com.example.thirteen_stones.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.ui.AppBarConfiguration;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.thirteen_stones.R;
-import com.example.thirteen_stones.databinding.ActivityMainBinding;
+import com.example.thirteen_stones.lib.DialogUtils;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
+//import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
+//    private AppBarConfiguration appBarConfiguration;
+//    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        setSupportActionBar(binding.toolbar);
-
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -50,13 +54,44 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id) {
+            case R.id.action_new_game:
+                startNextNewGame();
+                return true;
+            case R.id.action_statistics:
+                showStatistics();
+                return true;
+            case R.id.action_reset_stats:
+                // mGame.resetStatistics();
+                return true;
+            case R.id.action_settings:
+                showSettings();
+                return true;
+            case R.id.action_about:
+                showAbout();
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
+
+    private void startNextNewGame() {
+    }
+
+    private void showStatistics() {
+        Intent intent = new Intent(getApplicationContext(), StatisticsActivity.class);
+        startActivity(intent);
+    }
+
+    private void showSettings() {
+    }
+
+    private void showAbout() {
+        DialogUtils.showInfoDialog(this, "About 13 Stones",
+                "This is our second in-class app of the semester!");
+
+
+    }
 
 }

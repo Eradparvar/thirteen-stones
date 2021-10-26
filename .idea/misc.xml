@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/drawable-nodpi/ic_baseline_list_24.xml" value="0.209375" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/drawable-nodpi/ic_outline_cancel_24.xml" value="0.209375" />
         <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/drawable-nodpi/splash_background.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/content_statistics.xml" value="0.1" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/main_include_bottom_bar_and_fab.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/main_include_card_buttons.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/main_include_card_image_stones.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/main_include_instruction_bar.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/layout/main_include_toolbar.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/menu/menu_main.xml" value="0.6" />
         <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Eli/AndroidStudioProjects/ThirteenStones/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
       </map>
