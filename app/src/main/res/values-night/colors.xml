@@ -10,5 +10,5 @@
 
 
     <!--    splash screen-->
-    <color name="defaultBackgroundColor">@android:color/background_dark</color>
+    <color name="backgroundDefaultColor">@android:color/background_dark</color>
 </resources>
